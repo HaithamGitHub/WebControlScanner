@@ -32,7 +32,7 @@ public class PageBase  {
 		                 + "{ allIds.push('@ID:' + el.id + ' - @Name:' + el.name + '- @Title:' + el.title + '- @Class: ' + el.class ); } "
 		              + "}"
 		              + "return allIds; ");
-		    System.out.println("IDs: " + List);
+		    //System.out.println("IDs: " + List);
 		    System.out.println("========================: =========  ===========  ============   ============ ");
 		    System.out.println("      Control NO        : ControlID  ControlName  ControlTitle   ControlClass ");
 		    System.out.println("========================: =========  ===========  ============   ============ ");

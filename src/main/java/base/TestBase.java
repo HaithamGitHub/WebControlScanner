@@ -37,10 +37,12 @@ public class TestBase {
     public static void OpenBrowser () {
 		
 		String BrowserType = properties.getProperty("browser");
+		String url = properties.getProperty("url");
+		System.out.println("==== Open the Browser ====");
+		System.out.println("Scanning the application : [" +url+ "]");
 		
 		if (BrowserType.equals("chrome")){
 			
-			System.out.println("==== Open the Browser ====");
 			ChromeOptions ops = new ChromeOptions();
 			ops.addArguments("--disable-notifications");
 
@@ -56,8 +58,10 @@ public class TestBase {
 		else
 		{System.out.println("Other Driver is selected");}
 		
+
 		driver.manage().window().maximize();
-		driver.get(properties.getProperty("url"));
+		driver.get(url);
+
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	

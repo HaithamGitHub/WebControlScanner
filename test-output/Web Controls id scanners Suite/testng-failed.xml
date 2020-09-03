@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="getWebControlsDetails"/>
+          <include name="test1"/>
         </methods>
       </class> <!-- testcases.ControlIdTest -->
     </classes>

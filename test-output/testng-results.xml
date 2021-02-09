@@ -2,25 +2,101 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-02T13:41:19 EET" name="Default suite" finished-at="2021-02-02T13:41:29 EET" duration-ms="10271">
+  <suite started-at="2021-02-09T15:59:02 EET" name="Web Controls id scanners Suite" finished-at="2021-02-09T15:59:04 EET" duration-ms="1883">
     <groups>
     </groups>
-    <test started-at="2021-02-02T13:41:19 EET" name="Default test" finished-at="2021-02-02T13:41:29 EET" duration-ms="10271">
+    <test started-at="2021-02-09T15:59:02 EET" name="Scanning for Controls" finished-at="2021-02-09T15:59:04 EET" duration-ms="1883">
       <class name="testcases.ControlIdTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@1e1a0406]" started-at="2021-02-02T13:41:19 EET" name="beforeMethod" finished-at="2021-02-02T13:41:29 EET" duration-ms="9761" status="FAIL">
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@149494d8]" started-at="2021-02-09T15:59:02 EET" name="beforeMethod" finished-at="2021-02-09T15:59:04 EET" duration-ms="1797" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe]]>
+              <![CDATA[unknown error: cannot find Chrome binary
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'US-CND60820RG', ip: '10.218.169.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00BC87E3+2852835]
+Ordinal0 [0x00AB5BB1+1727409]
+Ordinal0 [0x0098E4B9+517305]
+Ordinal0 [0x0091CA98+51864]
+Ordinal0 [0x0093D9F7+186871]
+Ordinal0 [0x0093D7FD+186365]
+Ordinal0 [0x0093B70B+177931]
+Ordinal0 [0x00922584+75140]
+Ordinal0 [0x00923650+79440]
+Ordinal0 [0x009235E9+79337]
+Ordinal0 [0x00ACAD5C+1813852]
+GetHandleVerifier [0x00CEC616+1075574]
+GetHandleVerifier [0x00CEC367+1074887]
+GetHandleVerifier [0x00CF7497+1120247]
+GetHandleVerifier [0x00CECC16+1077110]
+Ordinal0 [0x00AC3206+1782278]
+Ordinal0 [0x00ACC3BB+1819579]
+Ordinal0 [0x00ACC523+1819939]
+Ordinal0 [0x00AE2B45+1911621]
+BaseThreadInitThunk [0x77726359+25]
+RtlGetAppContainerNamedObjectPath [0x77C98944+228]
+RtlGetAppContainerNamedObjectPath [0x77C98914+180]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-at base.TestBase.OpenBrowser(TestBase.java:70)
-at testcases.ControlIdTest.beforeMethod(ControlIdTest.java:31)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'US-CND60820RG', ip: '10.218.169.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00BC87E3+2852835]
+Ordinal0 [0x00AB5BB1+1727409]
+Ordinal0 [0x0098E4B9+517305]
+Ordinal0 [0x0091CA98+51864]
+Ordinal0 [0x0093D9F7+186871]
+Ordinal0 [0x0093D7FD+186365]
+Ordinal0 [0x0093B70B+177931]
+Ordinal0 [0x00922584+75140]
+Ordinal0 [0x00923650+79440]
+Ordinal0 [0x009235E9+79337]
+Ordinal0 [0x00ACAD5C+1813852]
+GetHandleVerifier [0x00CEC616+1075574]
+GetHandleVerifier [0x00CEC367+1074887]
+GetHandleVerifier [0x00CF7497+1120247]
+GetHandleVerifier [0x00CECC16+1077110]
+Ordinal0 [0x00AC3206+1782278]
+Ordinal0 [0x00ACC3BB+1819579]
+Ordinal0 [0x00ACC523+1819939]
+Ordinal0 [0x00AE2B45+1911621]
+BaseThreadInitThunk [0x77726359+25]
+RtlGetAppContainerNamedObjectPath [0x77C98944+228]
+RtlGetAppContainerNamedObjectPath [0x77C98914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at base.TestBase.OpenBrowser(TestBase.java:50)
+at testcases.ControlIdTest.beforeMethod(ControlIdTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,45 +126,108 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 at org.testng.TestNG.runSuites(TestNG.java:1069)
 at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:300)
-at io.github.bonigarcia.wdm.online.Downloader.downloadAndExtract(Downloader.java:141)
-at io.github.bonigarcia.wdm.online.Downloader.download(Downloader.java:88)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:630)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-... 37 more
-Caused by: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
-at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
-at java.base/java.nio.file.Files.delete(Files.java:1146)
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:298)
-... 41 more
+at testcases.Run.main(Run.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:1, instance:testcases.ControlIdTest@1e1a0406]" started-at="2021-02-02T13:41:29 EET" name="test1" description="Test Name" finished-at="2021-02-02T13:41:29 EET" duration-ms="0" status="SKIP">
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+        <test-method signature="test1()[pri:0, instance:testcases.ControlIdTest@149494d8]" started-at="2021-02-09T15:59:04 EET" name="test1" finished-at="2021-02-09T15:59:04 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe]]>
+              <![CDATA[unknown error: cannot find Chrome binary
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'US-CND60820RG', ip: '10.218.169.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00BC87E3+2852835]
+Ordinal0 [0x00AB5BB1+1727409]
+Ordinal0 [0x0098E4B9+517305]
+Ordinal0 [0x0091CA98+51864]
+Ordinal0 [0x0093D9F7+186871]
+Ordinal0 [0x0093D7FD+186365]
+Ordinal0 [0x0093B70B+177931]
+Ordinal0 [0x00922584+75140]
+Ordinal0 [0x00923650+79440]
+Ordinal0 [0x009235E9+79337]
+Ordinal0 [0x00ACAD5C+1813852]
+GetHandleVerifier [0x00CEC616+1075574]
+GetHandleVerifier [0x00CEC367+1074887]
+GetHandleVerifier [0x00CF7497+1120247]
+GetHandleVerifier [0x00CECC16+1077110]
+Ordinal0 [0x00AC3206+1782278]
+Ordinal0 [0x00ACC3BB+1819579]
+Ordinal0 [0x00ACC523+1819939]
+Ordinal0 [0x00AE2B45+1911621]
+BaseThreadInitThunk [0x77726359+25]
+RtlGetAppContainerNamedObjectPath [0x77C98944+228]
+RtlGetAppContainerNamedObjectPath [0x77C98914+180]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-at base.TestBase.OpenBrowser(TestBase.java:70)
-at testcases.ControlIdTest.beforeMethod(ControlIdTest.java:31)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'US-CND60820RG', ip: '10.218.169.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00BC87E3+2852835]
+Ordinal0 [0x00AB5BB1+1727409]
+Ordinal0 [0x0098E4B9+517305]
+Ordinal0 [0x0091CA98+51864]
+Ordinal0 [0x0093D9F7+186871]
+Ordinal0 [0x0093D7FD+186365]
+Ordinal0 [0x0093B70B+177931]
+Ordinal0 [0x00922584+75140]
+Ordinal0 [0x00923650+79440]
+Ordinal0 [0x009235E9+79337]
+Ordinal0 [0x00ACAD5C+1813852]
+GetHandleVerifier [0x00CEC616+1075574]
+GetHandleVerifier [0x00CEC367+1074887]
+GetHandleVerifier [0x00CF7497+1120247]
+GetHandleVerifier [0x00CECC16+1077110]
+Ordinal0 [0x00AC3206+1782278]
+Ordinal0 [0x00ACC3BB+1819579]
+Ordinal0 [0x00ACC523+1819939]
+Ordinal0 [0x00AE2B45+1911621]
+BaseThreadInitThunk [0x77726359+25]
+RtlGetAppContainerNamedObjectPath [0x77C98944+228]
+RtlGetAppContainerNamedObjectPath [0x77C98914+180]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at base.TestBase.OpenBrowser(TestBase.java:50)
+at testcases.ControlIdTest.beforeMethod(ControlIdTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,36 +257,23 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 at org.testng.TestNG.runSuites(TestNG.java:1069)
 at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:300)
-at io.github.bonigarcia.wdm.online.Downloader.downloadAndExtract(Downloader.java:141)
-at io.github.bonigarcia.wdm.online.Downloader.download(Downloader.java:88)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:630)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-... 37 more
-Caused by: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\88.0.4324.96\chromedriver.exe
-at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
-at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
-at java.base/java.nio.file.Files.delete(Files.java:1146)
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:298)
-... 41 more
+at testcases.Run.main(Run.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@1e1a0406]" started-at="2021-02-02T13:41:29 EET" name="afterMethod" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1612266089560" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@149494d8]" started-at="2021-02-09T15:59:04 EET" name="afterMethod" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1612879144062" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testcases.ControlIdTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Scanning for Controls -->
+  </suite> <!-- Web Controls id scanners Suite -->
 </testng-results>

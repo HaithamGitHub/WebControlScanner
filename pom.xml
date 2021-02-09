@@ -7,11 +7,13 @@
   <dependencies>
 	    <!-- Selenium -->
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-java</artifactId>
-		    <version>3.141.59</version>
+		    <version>4.0.0-alpha-6</version>
 		</dependency>
+
 		
 		<!-- TestNG -->
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -21,6 +23,22 @@
 		    <version>7.3.0</version>
 		    <scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+		<dependency>
+		    <groupId>io.qameta.allure</groupId>
+		    <artifactId>allure-testng</artifactId>
+		    <version>2.13.5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>4.2.0</version>
+		</dependency>
+
 
 	</dependencies>	
   

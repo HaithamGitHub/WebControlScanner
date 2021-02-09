@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
+
 public class PageBase  {
 	//Define the Object Repistory 
 	
@@ -46,10 +47,12 @@ public class PageBase  {
 		    	else
 		    	    {Header = Header + Integer.valueOf(i+1) +") of (" + List.size() + ") : " ;}
 		    	
-		    	System.out.println(Header + List.subList(i, i+1) );	    
+		    	System.out.println(Header + List.subList(i, i+1) );
 		    }
 		    System.out.println("======================================================================================== ");
 			return List;
 	}
+    
+    
     
 }

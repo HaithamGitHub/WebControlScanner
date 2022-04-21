@@ -21,6 +21,7 @@ import org.openqa.selenium.devtools.network.model.Headers;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
+//import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -89,6 +90,61 @@ public class TestBase {
 		return getDriver();
 	}
 
+    
+public static void OpenBrowser_remote () {
+		///////////////////////////////////////////////////////
+     	/*
+		String BrowserType = properties.getProperty("browser");
+		String url = properties.getProperty("url");
+		//url = "https://the-internet.herokuapp.com/basic_auth";
+		System.out.println("==== Open the Browser ====");
+		System.out.println("Scanning the application : [" + url + "]");
+		
+		if (BrowserType.equals("chrome")){
+			
+			ChromeOptions ops = new ChromeOptions();
+			//ops.addArguments("--disable-notifications");
+			ops.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+			//ops.addArguments("--disable-blink-features='BlockCredentialedSubresources'");
+			ops.addArguments("--incognito");
+			//System.setProperty("illegal-access", "deny");
+			
+			//WebDriverManager.chromedriver().forceDownload().browserPath("C:\\Users\\hahmed20\\.m2\\haitham");   			
+			WebDriverManager.chromedriver().forceDownload().setup();
+			driver = new ChromeDriver(ops);
+						
+		}
+		else if (BrowserType.equals("firefox"))
+		{
+			
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver(); 
+		}
+		else
+		{System.out.println("Other Driver is selected");}
+	
+		driver.get(url);
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    */	
+		/////////////////////////////////////////////////////////////////////////////
+	/* 	
+	ChromeOptions ops = new ChromeOptions();
+		//ops.addArguments("--disable-notifications");
+		ops.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		//ops.addArguments("--disable-blink-features='BlockCredentialedSubresources'");
+		ops.addArguments("--incognito");
+		//System.setProperty("illegal-access", "deny");
+	
+		DesiredCapabilities cap = DesiredCapabilities.firefox ;
+	
+		WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1/wd/hub:4444"),  ops);
+		
+	    driver.get("http://www.google.com");     
+	    driver.quit();   
+	*/
+	}
    
     public static void newRobotfunction()
     {

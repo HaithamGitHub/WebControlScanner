@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Web_Controls_id_scanners_Suite" class="navigator-link ">
-                    <span>C:\Haitham\ProjectWorkspaces\WebControlScanner\src\test\resources\RunScanning.xml</span>
+                    <span>C:\Haitham\ProjectWorkspaces\WebControlScanner\src\test\resources\ParallelRun.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Web_Controls_id_scanners_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Web_Controls_id_scanners_Suite" title="testcases.ControlIdTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Web_Controls_id_scanners_Suite" title="testcases.ControlIdTest" class="method navigator-link" hash-for-method="test_ch">test_ch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Web_Controls_id_scanners_Suite -->
@@ -127,11 +127,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="test_ch">
+                  </a> <!-- test_ch -->
+                  <span class="method-name">test_ch</span>
                   <em>
-(Test Name)                  </em>
+(Chrome test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,18 +139,22 @@
         </div> <!-- panel Web_Controls_id_scanners_Suite -->
         <div panel-name="test-xml-Web_Controls_id_scanners_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Haitham\ProjectWorkspaces\WebControlScanner\src\test\resources\RunScanning.xml</span>
+            <span class="header-content">C:\Haitham\ProjectWorkspaces\WebControlScanner\src\test\resources\ParallelRun.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Web Controls id scanners Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Scanning for Controls&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;Web Controls id scanners Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;Parallel Scanning for Controls&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.ControlIdTest&quot;/&gt;
+      &lt;class name=&quot;testcases.ControlIdTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_ch&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.ControlIdTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Scanning for Controls --&gt;
+  &lt;/test&gt; &lt;!-- Parallel Scanning for Controls --&gt;
 &lt;/suite&gt; &lt;!-- Web Controls id scanners Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Scanning for Controls (1 class)</span>
+                <span class="test-name">Parallel Scanning for Controls (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
+data.setCell(0, 1, 'test_ch')
 data.setCell(0, 2, 'testcases.ControlIdTest')
-data.setCell(0, 3, 650);
+data.setCell(0, 3, 6910);
 window.suiteTableData['Web_Controls_id_scanners_Suite']= { tableData: data, tableDiv: 'times-div-Web_Controls_id_scanners_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 650 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Web_Controls_id_scanners_Suite">
               </div> <!-- times-div-Web_Controls_id_scanners_Suite -->
             </div> <!-- times-div -->
@@ -212,9 +216,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Web_Controls_id_scanners_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.ControlIdTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test_ed</span>
+                <br/>
+                <span class="ignored-method-name">test_ff</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Web_Controls_id_scanners_Suite" class="panel">
@@ -229,13 +242,17 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">26351 ms</span>
+                <span class="method-name">test_ch</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">27016 ms</span>
+                <span class="method-start">7008 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">7061 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

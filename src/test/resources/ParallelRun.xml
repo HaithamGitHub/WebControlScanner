@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Web Controls id scanners Suite" parallel="methods" thread-count="3">
+	
+	<!-- <include name="test_ff" />
+		 <include name="test_ed" />
+		 -->
+	
+	<test name="Parallel Scanning for Controls">
+	     <classes>		  			  
+		     
+			<class name="testcases.ControlIdTest">
+				<methods>
+                 	<include name="test_ch" />
+					
+				</methods>
+			</class>
+			
+	    </classes>
+
+	</test>
+	
+	
+	
+</suite>

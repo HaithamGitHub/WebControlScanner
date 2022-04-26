@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-20T12:48:22 EET" name="Web Controls id scanners Suite" finished-at="2022-04-20T12:48:49 EET" duration-ms="27118">
+  <suite started-at="2022-04-26T17:44:02 EET" name="Web Controls id scanners Suite" finished-at="2022-04-26T17:44:09 EET" duration-ms="7048">
     <groups>
     </groups>
-    <test started-at="2022-04-20T12:48:22 EET" name="Scanning for Controls" finished-at="2022-04-20T12:48:49 EET" duration-ms="27118">
+    <test started-at="2022-04-26T17:44:02 EET" name="Parallel Scanning for Controls" finished-at="2022-04-26T17:44:09 EET" duration-ms="7048">
       <class name="testcases.ControlIdTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@1e1a0406]" started-at="2022-04-20T12:48:22 EET" name="beforeMethod" finished-at="2022-04-20T12:48:48 EET" duration-ms="25954" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@f1da57d]" started-at="2022-04-26T17:44:02 EET" name="beforeMethod" finished-at="2022-04-26T17:44:02 EET" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:1, instance:testcases.ControlIdTest@1e1a0406]" started-at="2022-04-20T12:48:49 EET" name="test1" description="Test Name" finished-at="2022-04-20T12:48:49 EET" duration-ms="650" status="PASS">
+        <test-method signature="test_ch()[pri:0, instance:testcases.ControlIdTest@f1da57d]" started-at="2022-04-26T17:44:02 EET" name="test_ch" description="Chrome test" finished-at="2022-04-26T17:44:09 EET" duration-ms="6910" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@1e1a0406]" started-at="2022-04-20T12:48:49 EET" name="afterMethod" finished-at="2022-04-20T12:48:49 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- test_ch -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@f1da57d]" started-at="2022-04-26T17:44:09 EET" name="afterMethod" finished-at="2022-04-26T17:44:09 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.ControlIdTest@f1da57d]" started-at="2022-04-26T17:44:09 EET" name="afterSuite" finished-at="2022-04-26T17:44:28 EET" duration-ms="18418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- testcases.ControlIdTest -->
-    </test> <!-- Scanning for Controls -->
+    </test> <!-- Parallel Scanning for Controls -->
   </suite> <!-- Web Controls id scanners Suite -->
 </testng-results>

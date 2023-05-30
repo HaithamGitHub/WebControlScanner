@@ -55,17 +55,17 @@ public class ControlIdTest extends base.TestBase{
 	
 	
 	@Test( description="Chrome test")
-	public void test_ch() throws MalformedURLException
+	public void test_ch() throws Exception
 	{
 		Allure.addAttachment(" My Test Start : ", " Chrome test");
 		driver =OpenBrowser_remote("ch");
+		//driver = OpenBrowser_local();
 		projectPageObj = new ProjectPage1(driver, properties);		
 		projectPageObj.getWebControlsDetails();
 			
 		Allure.addAttachment(" My Test End : ", " chrome test");
 	}
-	
-	
+		
 	@Test( description="Eadge test")
 	public void test_ed() throws MalformedURLException
 	{

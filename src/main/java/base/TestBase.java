@@ -37,7 +37,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-	//private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	
+    //private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    //private static final ThreadLocal<WebDriverManager> webDriverManager = new ThreadLocal<>();
 	public static WebDriver driver;
 	public static Properties properties; 
 	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
@@ -58,7 +60,7 @@ public class TestBase {
 		}
 	}
 	
-    public static WebDriver OpenBrowser () {
+    public static WebDriver OpenBrowser_local () throws Exception {
 		
 		String BrowserType = properties.getProperty("browser");
 		String url = properties.getProperty("url");
@@ -76,8 +78,13 @@ public class TestBase {
 			//System.setProperty("illegal-access", "deny");
 			
 			//WebDriverManager.chromedriver().forceDownload().browserPath("C:\\Users\\hahmed20\\.m2\\haitham");   			
-			WebDriverManager.chromedriver().forceDownload().setup();
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(ops);
+			
+			//driver.set(WebDriverManager.chromedriver().proxy("").capabilities(ops).create());
+			
+			//driver = new RemoteWebDriver(new URL(url) , new ChromeOptions());
+			//driver = new ChromeDriver(ops);
 						
 		}
 		else if (BrowserType.equals("firefox"))
@@ -126,12 +133,16 @@ public class TestBase {
 	System.out.println("==== Open the Browser ====");
 	System.out.println("Scanning the application : [" + baseURL + "]");
      
+	
      if (BrowserType.equals("ch"))
-     {driver = new RemoteWebDriver(new URL(nodeURL),getChromeConfiguration("100.0.4896.127", ""));}
+     {
+    	 driver = new RemoteWebDriver(new URL(nodeURL),getChromeConfiguration(""));
+    	 //driver = new RemoteWebDriver(new URL(nodeURL),new ChromeOptions());
+     }
      else if (BrowserType.equals("ff"))
-     {driver = new RemoteWebDriver(new URL(nodeURL),getFireFoxConfiguration("99.0.1", ""));}
+     {driver = new RemoteWebDriver(new URL(nodeURL),getFireFoxConfiguration(""));}
      else if (BrowserType.equals("ed"))
-     {driver = new RemoteWebDriver(new URL(nodeURL),getEdgeConfiguration("100.0.1185.44", ""));}
+     {driver = new RemoteWebDriver(new URL(nodeURL),getEdgeConfiguration(""));}
      
      
      driver.get(baseURL);
@@ -142,43 +153,43 @@ public class TestBase {
 
    
 
-	private static FirefoxOptions getFireFoxConfiguration(String browserVersion,String platform)
+	private static FirefoxOptions getFireFoxConfiguration(String platform)
 	{
 		FirefoxOptions firefoxOption = new FirefoxOptions();
 		firefoxOption.addArguments("--start-maximized");
 		firefoxOption.addArguments("--private");
 		DesiredCapabilities desireCapabilities = new DesiredCapabilities();
 		desireCapabilities.setCapability(CapabilityType.PLATFORM_NAME, getPlatform(""));
-		desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
-		desireCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		//desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
+		desireCapabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		desireCapabilities.setCapability("moz:firefoxOptions",firefoxOption);
 		firefoxOption.merge(desireCapabilities);
 	return firefoxOption;
 	}
 
-	private static ChromeOptions getChromeConfiguration(String browserVersion,String platform)
+	private static ChromeOptions getChromeConfiguration(String platform)
 	{
 		ChromeOptions chromeOption = new ChromeOptions();
 		chromeOption.addArguments("--incognito");
 		chromeOption.addArguments("--start-maximized");
 		DesiredCapabilities desireCapabilities = new DesiredCapabilities();
 		desireCapabilities.setCapability(CapabilityType.PLATFORM_NAME, getPlatform(platform));
-		desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
-		desireCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		//desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
+		desireCapabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		desireCapabilities.setCapability(ChromeOptions.CAPABILITY,chromeOption);
 		chromeOption.merge(desireCapabilities);
 		return chromeOption;
 	}
 	
-	private static EdgeOptions getEdgeConfiguration(String browserVersion,String platform)
+	private static EdgeOptions getEdgeConfiguration(String platform)
 	{
 		EdgeOptions edgeOption = new EdgeOptions();
 		edgeOption.addArguments("--start-maximized");
 		edgeOption.addArguments("--inprivate");
 		DesiredCapabilities desireCapabilities = new DesiredCapabilities();
 		desireCapabilities.setCapability(CapabilityType.PLATFORM_NAME, getPlatform(platform));
-		desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
-		desireCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		//desireCapabilities.setCapability(CapabilityType.BROWSER_VERSION,browserVersion);
+		desireCapabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		desireCapabilities.setCapability(EdgeOptions.CAPABILITY,edgeOption);
 		edgeOption.merge(desireCapabilities);
 		return edgeOption;

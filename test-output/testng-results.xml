@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-30T13:13:02 EET" name="Default suite" finished-at="2023-05-30T13:13:18 EET" duration-ms="16298">
+  <suite started-at="2023-06-13T18:01:25 EET" name="Default suite" finished-at="2023-06-13T18:01:37 EET" duration-ms="12609">
     <groups>
     </groups>
-    <test started-at="2023-05-30T13:13:02 EET" name="Default test" finished-at="2023-05-30T13:13:18 EET" duration-ms="16298">
+    <test started-at="2023-06-13T18:01:25 EET" name="Default test" finished-at="2023-06-13T18:01:37 EET" duration-ms="12609">
       <class name="testcases.ControlIdTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@338fc1d8]" started-at="2023-05-30T13:13:02 EET" name="beforeMethod" finished-at="2023-05-30T13:13:02 EET" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@5852c06f]" started-at="2023-06-13T18:01:25 EET" name="beforeMethod" finished-at="2023-06-13T18:01:25 EET" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test_ch()[pri:0, instance:testcases.ControlIdTest@338fc1d8]" started-at="2023-05-30T13:13:02 EET" name="test_ch" description="Chrome test" finished-at="2023-05-30T13:13:18 EET" duration-ms="16179" status="FAIL">
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-at base.TestBase.OpenBrowser_local(TestBase.java:79)
-at testcases.ControlIdTest.test_ch(ControlIdTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:300)
-at io.github.bonigarcia.wdm.online.Downloader.downloadAndExtract(Downloader.java:141)
-at io.github.bonigarcia.wdm.online.Downloader.download(Downloader.java:88)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:630)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-... 33 more
-Caused by: java.nio.file.AccessDeniedException: C:\Users\hahmed20\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
-at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
-at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
-at java.base/java.nio.file.Files.delete(Files.java:1146)
-at io.github.bonigarcia.wdm.online.Downloader.deleteFile(Downloader.java:298)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+        <test-method signature="test_ff()[pri:1, instance:testcases.ControlIdTest@5852c06f]" started-at="2023-06-13T18:01:25 EET" name="test_ff" description="FF test" finished-at="2023-06-13T18:01:37 EET" duration-ms="12431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_ch -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@338fc1d8]" started-at="2023-05-30T13:13:18 EET" name="afterMethod" finished-at="2023-05-30T13:13:18 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- test_ff -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@5852c06f]" started-at="2023-06-13T18:01:37 EET" name="afterMethod" finished-at="2023-06-13T18:01:37 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.ControlIdTest@338fc1d8]" started-at="2023-05-30T13:13:18 EET" name="afterSuite" finished-at="2023-05-30T18:22:18 EET" duration-ms="18540136" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.ControlIdTest@5852c06f]" started-at="2023-06-13T18:01:37 EET" name="afterSuite" finished-at="2023-06-13T18:01:40 EET" duration-ms="2266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

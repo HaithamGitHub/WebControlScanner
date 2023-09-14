@@ -6,8 +6,9 @@
       <class name="testcases.ControlIdTest">
         <methods>
           <include name="beforeMethod"/>
+          <include name="test_ch"/>
           <include name="afterMethod"/>
-          <include name="test1"/>
+          <include name="afterSuite"/>
         </methods>
       </class> <!-- testcases.ControlIdTest -->
     </classes>

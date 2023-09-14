@@ -53,7 +53,6 @@ public class ControlIdTest extends base.TestBase{
 		Allure.addAttachment(" My Test End : ", " FF test");
 	}
 	
-	
 	@Test( description="Chrome test")
 	public void test_ch() throws Exception
 	{

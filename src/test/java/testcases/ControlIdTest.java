@@ -30,12 +30,12 @@ public class ControlIdTest extends base.TestBase{
 	
 	
 	@BeforeMethod
-	public void beforeMethod() throws MalformedURLException {
-		//driver = OpenBrowser();
+	public void beforeMethod() throws Exception {
+		driver = OpenBrowser_local();
 		//OpenBrowser_remote();
 	}
 	
-	@Test(priority=1, description="FF test")
+	//@Test(priority=1, description="FF test")
 	@Description("The test Desc")
 	@Epic("Epic")
 	@Feature("Feature")
@@ -45,7 +45,7 @@ public class ControlIdTest extends base.TestBase{
 	public void test_ff() throws MalformedURLException
 	{
 		Allure.addAttachment(" My Test Start : ", " FF test");
-		driver = OpenBrowser_remote("ff");
+		//driver = OpenBrowser_remote("ff");
 		projectPageObj = new ProjectPage1(driver, properties);		
 		projectPageObj.getWebControlsDetails();
 			
@@ -56,7 +56,7 @@ public class ControlIdTest extends base.TestBase{
 	public void test_ch() throws Exception
 	{
 		Allure.addAttachment(" My Test Start : ", " Chrome test");
-		driver =OpenBrowser_remote("ch");
+		//driver =OpenBrowser_remote("ch");
 		//driver = OpenBrowser_local();
 		projectPageObj = new ProjectPage1(driver, properties);		
 		projectPageObj.getWebControlsDetails();
@@ -64,11 +64,11 @@ public class ControlIdTest extends base.TestBase{
 		Allure.addAttachment(" My Test End : ", " chrome test");
 	}
 		
-	@Test( description="Eadge test")
+	//@Test( description="Eadge test")
 	public void test_ed() throws MalformedURLException
 	{
 		Allure.addAttachment(" My Test Start : ", " Eadge test");
-		driver = OpenBrowser_remote("ed");
+		//driver = OpenBrowser_remote("ed");
 		projectPageObj = new ProjectPage1(driver, properties);		
 		projectPageObj.getWebControlsDetails();
 			

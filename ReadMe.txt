@@ -9,5 +9,5 @@ the source code is on the following GitHub < https://github.com/HaithamGitHub/We
 
 Pre-Requisites:
 ===============
-1. JDK version 13
+1. JDK version 17
 2. IDE Eclipse or IntelliJ for reuse the project

@@ -33,7 +33,6 @@ public class ControlIdTest extends base.TestBase{
 	public void beforeMethod() throws MalformedURLException {
 		//driver = OpenBrowser();
 		//OpenBrowser_remote();
-		
 	}
 	
 	@Test(priority=1, description="FF test")

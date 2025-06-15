@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T13:13:25 EET" name="Web Controls id scanners Suite" finished-at="2023-09-20T13:13:36 EET" duration-ms="11367">
+  <suite started-at="2025-02-18T16:39:34 EET" name="Default suite" finished-at="2025-02-18T16:39:43 EET" duration-ms="8867">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@264f218]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-20T13:13:25 EET" name="Parallel Scanning for Controls" finished-at="2023-09-20T13:13:36 EET" duration-ms="11367">
-      <class name="testcases.ControlIdTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.ControlIdTest@126253fd]" started-at="2023-09-20T13:13:25 EET" name="beforeMethod" finished-at="2023-09-20T13:13:36 EET" duration-ms="11026" status="PASS">
+    <test started-at="2025-02-18T16:39:34 EET" name="Default test" finished-at="2025-02-18T16:39:43 EET" duration-ms="8867">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@264f218]" started-at="2025-02-18T16:39:34 EET" name="setUpClass" finished-at="2025-02-18T16:39:35 EET" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b3a7ef5]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test_ch()[pri:0, instance:testcases.ControlIdTest@126253fd]" started-at="2023-09-20T13:13:36 EET" name="test_ch" description="Chrome test" finished-at="2023-09-20T13:13:36 EET" duration-ms="178" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@264f218]" started-at="2025-02-18T16:39:35 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T16:39:43 EET" duration-ms="7867" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Application Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['Incorrect username or password.' message is not displayed or not correct expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'Incorrect username or password.' message is not displayed or not correct expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at stepdefinitions.LoginSteps.user_is_redirected_to_the_homepage(LoginSteps.java:53)
+at ✽.User is redirected to the homepage(file:///C:/Haitham/ProjectWorkspaces/WebControlScanner/src/test/resources/features/LoginExample.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_ch -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.ControlIdTest@126253fd]" started-at="2023-09-20T13:13:36 EET" name="afterMethod" finished-at="2023-09-20T13:13:36 EET" duration-ms="2" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@264f218]" started-at="2025-02-18T16:39:43 EET" name="tearDownClass" finished-at="2025-02-18T16:39:43 EET" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.ControlIdTest@126253fd]" started-at="2023-09-20T13:13:36 EET" name="afterSuite" finished-at="2023-09-20T13:14:09 EET" duration-ms="32639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testcases.ControlIdTest -->
-    </test> <!-- Parallel Scanning for Controls -->
-  </suite> <!-- Web Controls id scanners Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

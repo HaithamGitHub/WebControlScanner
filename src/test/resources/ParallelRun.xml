@@ -12,7 +12,7 @@
 			<class name="testcases.ControlIdTest">
 				<methods>
                  	<include name="test_ch" />
-					
+					<include name="test_ff" />
 				</methods>
 			</class>
 			
